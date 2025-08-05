@@ -15,3 +15,17 @@ def wrapping_paper_calculator(gift_dimensions):
     
     return paper
 
+def ribbon_calculator(gift_dimensions):
+
+    ribbon = 0
+    for gift in gift_dimensions:
+        gift.sort()
+        cubic_feet = 1
+        
+        for d in gift:
+            cubic_feet *= d
+
+        ribbon += 2 * gift[0] + 2 * gift[1] + cubic_feet 
+
+    return ribbon
+
