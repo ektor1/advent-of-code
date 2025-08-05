@@ -1,6 +1,6 @@
-.swp
-.swo
+*.swp
+*.swo
 .DS_Store
-*__pycache__
+__pycache__
 sandbox.ipynb
 
