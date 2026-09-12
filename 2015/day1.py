@@ -1,6 +1,3 @@
-with open("input-day1.txt", "r") as file:
-    data = file.read()
-
 def floor_finder(directions):
     directions_map = {"(": 1, ")": -1}
 
@@ -21,5 +18,3 @@ def basement_finder(directions):
             break
 
     return i + 1
-
-print(basement_finder(data))
