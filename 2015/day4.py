@@ -1,11 +1,5 @@
 import hashlib
 
-
-def get_md5_hash(input_str):
-    """TO DO: write your own md5 hash function"""
-    pass
-
-
 def find_secret_key(input, n_zeros) -> int:
     num = 0
     md5_hash = hashlib.md5(input.encode())
